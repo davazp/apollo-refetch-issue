@@ -72,7 +72,7 @@ function Component() {
           clearBooks();
         }}
       >
-        rerefetchQueries
+        clear books for 2 seconds
       </button>
     </div>
   );
