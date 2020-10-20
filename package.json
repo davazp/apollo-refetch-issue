@@ -1,0 +1,17 @@
+{
+  "name": "apollo-refetch-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Vázquez Púa <davazp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js & parcel index.html"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "apollo-server": "^2.18.2",
+    "express": "^4.17.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
