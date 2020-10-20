@@ -25,7 +25,7 @@ const apolloClient = new ApolloClient({
 });
 
 const GET_DATA = gql`
-  query {
+  query GetData {
     books {
       title
     }
@@ -51,6 +51,9 @@ function Component() {
   const { data, refetch } = useQuery(GET_DATA);
   const [clearBooks] = useMutation(CLEAR_BOOKS, {
     refetchQueries: [{ query: GET_DATA }],
+    //
+    // Replacing this with named query also fixes it.
+    // refetchQueries: ["GetData"],
   });
   return (
     <div>
